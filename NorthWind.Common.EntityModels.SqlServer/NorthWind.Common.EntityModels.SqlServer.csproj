@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<Using Include="System.Console" Static="true"/>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.13"/>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.13">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtie; build; native; contentfiles; analyzers; buildtransititives</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+
+</Project>
